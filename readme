@@ -1,1 +1,27 @@
-
+-----------------Mysql-----------------
+1)Télécharger le code source mysql-8.3.0 depuis le site officiel de mysql
+2) Lecture du manuel d’installation dans le même site pour voir tous les dépendances
+3)$tar xvf désarchivage de mysql-8.3.0.tar
+4)Téléchargement des dépendances:cmake,bison, bibliothèque ncurses,g++  
+5) création d’utilisateur et groupe: $groupadd mysql
+				     $useradd -r -g mysql -s /bin/false mysql
+6)$mkdir build (création de fichier build)
+7)$cd build; $cmake ..
+8)$sudo make
+9)$make install
+ 
+------------php-----------
+1)téléchargement du code source de php
+2)$tar -xvf php-8.3.6.tar pour désarchiver le paquet
+3)Lecture du manuel d’installation README et installation des dependances libxml2-dev,libsqlite3-dev
+4)éxécution de $./buildconfig pour générer le fichier configure
+5)$./configure
+6)#make
+7)#make install 
+----------Apache---------------
+1)Téléchargement du code source de apache2
+2)$bunzip httpd-2.4.59.tar.bz2 et $tar xvf httpd-2.4.59.tar (décompression et désarchivage)
+3)lecture du manuel d’installation
+4) téléchargement  de la dépendance libapr1 et libapr2
+5)execution de make
+6)#make install
